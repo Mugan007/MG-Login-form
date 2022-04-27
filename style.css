@@ -194,6 +194,7 @@ nav #icon {
     cursor: pointer;
     background: transparent;
     border: 0;
+    color:white;
     outline: none;
     position: relative;
 }
