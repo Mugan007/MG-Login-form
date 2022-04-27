@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title> NavBar|| Login </title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("#icon").click(function () {
+                $("ul").toggleClass("show");
+            });
+
+            $("#btn2").click(function () {
+                $("ul").toggleClass("show");
+            });
+
+            $("#icon").click(function () {
+                $("#login-form").fadeOut("1000");
+            });
+        })
+    </script>
+
+</head>
+
+<body>
+    <nav>
+        <label class="logo"> <a href="index.html"> MG Logo </a> </label>
+        <ul id="menuitems">
+            <li> <a class="active" href="#"> Home </a></li>
+            <li> <a href="#"> About Us </a></li>
+            <li> <a href="#"> Services </a></li>
+            <li> <a href="#"> content </a></li>
+            <li> <button id="btn2" class='loginbtn'
+                    onclick="document.getElementById('login-form').style.display='block'"
+                    style="width:auto;">Login</button></li>
+        </ul>
+        <label id="icon">
+            <i class="fa fa-bars"></i>
+        </label>
+    </nav>
+
+    <section>
+        <div id="login-form" class="login-page">
+            <div class="form-box">
+                <div class="button-box">
+                    <div id="btn"></div>
+                    <button type="button" onclick="login()" class="toggle-btn"> Login </button>
+                    <button type="button" onclick="register()" class="toggle-btn"> Register </button>
+                </div>
+                <form id="login" class="input-group-login">
+                    <input type="text" class="input-field" placeholder="Enter Name" required />
+                    <input type="email" class="input-field" placeholder="E-Mail Id" required />
+                    <input type="password" class="input-field" placeholder="Password" required />
+                    <input type="checkbox" class="check-box" /> <span> Remembar Password </span>
+                    <button type="button" class="submit-btn"> Login </button>
+                </form>
+                <form id="register" class="input-group-register">
+                    <input type="text" class="input-field" placeholder="First Name" required />
+                    <input type="text" class="input-field" placeholder="Last Name" required />
+                    <input type="email" class="input-field" placeholder="Enter E-Mail" required />
+                    <input type="password" class="input-field" placeholder="Enter Password" required />
+                    <input type="password" class="input-field" placeholder="confirm Password" required />
+                    <input type="checkbox" class="check-box" /> <span> Iagree to the
+                        tems & conditions </span>
+                    <button type="submit" class="submit-btn">Register </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        var x = document.getElementById("login");
+        var y = document.getElementById("register");
+        var z = document.getElementById("btn");
+
+        function register() {
+            x.style.left = '-400px';
+            y.style.left = "50px";
+            z.style.left = "110px";
+        }
+        function login() {
+            x.style.left = "50px";
+            y.style.left = "450px";
+            z.style.left = "0px";
+        }
+    </script>
+    <script>
+        var modal = document.getElementById('login-form');
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = `none`;
+            }
+        }
+    </script>
+</body>
+
+</html>
