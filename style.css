@@ -142,7 +142,13 @@ nav #icon {
     nav ul.show{
         left:0;
     }
+}
 
+@media (max-width:412px){
+    nav #icon {
+        display:block;
+        margin-top:-75px;
+    }
 }
 
 
