@@ -48,24 +48,25 @@ nav a {
 }
 
 nav button {
-    color: rgb(197, 28, 28);
+    color:#aaf683;
     font-size: 18px;
     text-transform: uppercase;
-    background:none;
-    border: 1px solid transparent;
-    padding: 7px 10px;
-    border-radius: 3px;
+    border-radius: 30px ;
+    border:2px solid #aaf683;
+    padding: 7px 20px;
+    background: transparent;
 }
 
-a.active,
 a:hover {
-    border: 1px solid white;
+    color:#aaf683;
     transition: .5s;
 }
 
 nav button:hover {
     transition: .5s;
-    border: 1px solid red;
+    border: 2px solid #aaf683;
+    color:white;
+    background:#aaf683;
 }
 
 nav #icon {
@@ -93,7 +94,7 @@ nav #icon {
     }
 
     nav button {
-        font-size: 17px;
+        font-size: 12px;
     }
 }
 
@@ -105,8 +106,7 @@ nav #icon {
     nav ul {
         position: fixed;
         width: 100%;
-        min-height: 100vh;
-        background: #2f3640;
+        min-height: 100vh;  
         top: 80px;
         left: -100%;
         text-align: center;
@@ -131,12 +131,11 @@ nav #icon {
 
     nav button {
         cursor: pointer;
-        font-size: 28px;
+        font-size: 18px;
     }
 
     nav button:hover {
-        color:white;
-        background: black;
+        color:white;  
         border: none;
     }
 
@@ -145,23 +144,7 @@ nav #icon {
     }
 
 }
-@media (max-width:400px){
-    .logo{
-        width:30%;
-        left:0px;
-    }
-    nav #icon {
-        display: block;
-        line-height: 20px;
-        float: right;
-    }
 
-    nav #icon {
-        color: white;
-        font-size: 10px;
-       
-    }
-}
 
 /* Nav Ending*/
 
@@ -177,7 +160,7 @@ nav #icon {
     background: rgba(0, 0, 0, 0.8);
     padding: 5px;
     overflow: hidden;
-    transition: .5s;
+    transition: 1s;
 
 }
 
