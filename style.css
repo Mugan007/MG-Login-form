@@ -5,13 +5,19 @@
     list-style: none;
 }
 
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
 body{
     font-family: montserrat;
     position: relative;
-    min-height: 100%;
-    width: 100%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("1.jpg");
-     background-repeat: no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("1.jpg") ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 nav {
